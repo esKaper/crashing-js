@@ -1,0 +1,11 @@
+{
+  "name": "crash course projects",
+  "description": "projects to learn js",
+  "author": {
+    "name": "Kate Fedorova"
+  },
+  "scripts": {},
+  "devDependencies": {
+    "mocha": "^2.5.3"
+  }
+}
