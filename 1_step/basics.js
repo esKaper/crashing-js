@@ -21,21 +21,31 @@ str = 'string';
 // with backticks
 str = `string`;
 // String interpolation (ES6):
-str = `old str => ${str}`;
+// Works only with backtics: ``
+str = `old str -> ${str}`;
 
 // Objects
 var o = {
     key: "value",
-    name: function() {return "Bob";}
+    name: function() {
+        return "Bob";
+    }
 };
 
-o.key; // value
+o.key; // "value"
 o["key"]; // "value"
+
+o.key
+ .toUpperCase()
+ .split("");
 
 // call function
 o.name(1,2,3);
 function fun(a, b, c) {
     console.log(`${a}, ${b}, ${c}`);
+    // the same with other notation
+    //console.log(a + ", " + b + ", " + c);
+    //console.log(a, ",", b, ",", c);
 }
 
 fun(1, 2, 3) // 1, 2, 3
